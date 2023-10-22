@@ -1,4 +1,4 @@
-public class Student extends Persona {
+public class Student extends Person {
     int yearOfStudy;
     int groupNumber;
 

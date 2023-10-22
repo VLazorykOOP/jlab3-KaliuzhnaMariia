@@ -36,10 +36,10 @@ public class Main {
         System.out.println(pinfo);
         String hinfo = h1.toString();
         System.out.println(hinfo);
-        List<Persona> personaList = new ArrayList<>();
-        personaList.add(s1);
-        personaList.add(p1);
-        personaList.add(h1);
-        System.out.println(personaList);
+        List<Person> personList = new ArrayList<>();
+        personList.add(s1);
+        personList.add(p1);
+        personList.add(h1);
+        System.out.println(personList);
     }
     }

@@ -1,4 +1,4 @@
-public class HeadOfDepartment extends Persona {
+public class HeadOfDepartment extends Person {
     int experience;
     String department;
 

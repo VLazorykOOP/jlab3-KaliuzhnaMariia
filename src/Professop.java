@@ -1,4 +1,4 @@
-public class Professop extends Persona {
+public class Professop extends Person {
     int experience;
 
     public Professop(String name, String surname, int ID, int experience) {

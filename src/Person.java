@@ -1,16 +1,16 @@
-public class Persona {
+public class Person {
     private String name;
     private String surname;
     private int ID;
     public static int num;
 
-    public Persona(String name, String surname, int ID){
+    public Person(String name, String surname, int ID){
         this.name = name;
         this.surname = surname;
         this.ID = ID;
     }
 
-    public Persona(){
+    public Person(){
         num++;
     }
 
