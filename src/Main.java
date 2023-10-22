@@ -18,7 +18,7 @@ public class Main {
                 break;
             }
             case 3:{
-
+                Task3();
                 break;
             }
             default:{
@@ -36,6 +36,7 @@ public class Main {
         System.out.println(pinfo);
         String hinfo = h1.toString();
         System.out.println(hinfo);
+
         List<Person> personList = new ArrayList<>();
         personList.add(s1);
         personList.add(p1);
@@ -51,6 +52,7 @@ public class Main {
         Date d3 = d1.increment();
         System.out.println("Is Date 1 equal to Date 2: " + d1.equals(d2));
         System.out.println("Date 1 after increment: " + d3);
+
         Time t1 = new Time(18, 59, 58);
         Time t2 = new Time(20, 15, 05);
         System.out.println("First:  " + t1);
@@ -58,6 +60,7 @@ public class Main {
         Time t3 = t1.increment();
         System.out.println("Is Date 1 equal to Date 2: " + t1.equals(t2));
         System.out.println("Time 1 after increment: " + t3);
+
         List<Triad> triadList = new ArrayList<>();
         triadList.add(d1);
         triadList.add(d2);
@@ -67,4 +70,36 @@ public class Main {
         triadList.add(t3);
         System.out.println(triadList);
     }
+    static void Task3(){
+        DateI d1 = new DateI(2002, 10, 31);
+        DateI d2 = new DateI(2015, 2, 9);
+        String d1info = d1.Show();
+        String d2info = d2.Show();
+        System.out.println("First:  " + d1info);
+        System.out.println("Second:  " + d2info);
+        DateI d3 = d1.increment();
+        System.out.println("Is Date 1 equal to Date 2: " + d1.equal(d2));
+        String d3info = d3.Show();
+        System.out.println("Date 1 after increment: " + d3info);
+
+        TimeI t1 = new TimeI(22, 59, 20);
+        TimeI t2 = new TimeI(6, 5,48);
+        String t1info = t1.Show();
+        String t2info = t2.Show();
+        System.out.println("First:  " + t1info);
+        System.out.println("Second:  " + t2info);
+        TimeI t3 = t1.increment();
+        System.out.println("Is Time 1 equal to Time 2: " + t1.equal(t2));
+        String t3info = t3.Show();
+        System.out.println("Time 1 after increment: " + t3info);
+
+        List<String> iTriadList = new ArrayList<>();
+        iTriadList.add(d1info);
+        iTriadList.add(d2info);
+        iTriadList.add(d3info);
+        iTriadList.add(t1info);
+        iTriadList.add(t2info);
+        iTriadList.add(t3info);
+        System.out.println(iTriadList);
     }
+}
