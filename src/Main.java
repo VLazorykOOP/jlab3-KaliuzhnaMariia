@@ -14,7 +14,7 @@ public class Main {
                 break;
             }
             case 2:{
-
+                Task2();
                 break;
             }
             case 3:{
@@ -41,5 +41,30 @@ public class Main {
         personList.add(p1);
         personList.add(h1);
         System.out.println(personList);
+    }
+
+    public static void Task2(){
+        Date d1 = new Date(2022, 04, 30);
+        Date d2 = new Date(2005, 11, 26);
+        System.out.println("First:  " + d1);
+        System.out.println("Second:  " + d2);
+        Date d3 = d1.increment();
+        System.out.println("Is Date 1 equal to Date 2: " + d1.equals(d2));
+        System.out.println("Date 1 after increment: " + d3);
+        Time t1 = new Time(18, 59, 58);
+        Time t2 = new Time(20, 15, 05);
+        System.out.println("First:  " + t1);
+        System.out.println("Second:  " + t2);
+        Time t3 = t1.increment();
+        System.out.println("Is Date 1 equal to Date 2: " + t1.equals(t2));
+        System.out.println("Time 1 after increment: " + t3);
+        List<Triad> triadList = new ArrayList<>();
+        triadList.add(d1);
+        triadList.add(d2);
+        triadList.add(d3);
+        triadList.add(t1);
+        triadList.add(t2);
+        triadList.add(t3);
+        System.out.println(triadList);
     }
     }
