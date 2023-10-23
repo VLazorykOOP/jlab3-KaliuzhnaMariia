@@ -9,7 +9,7 @@ public class Date extends Triad{
     }
 
     @Override
-    Date increment() {
+    public Date increment() {
         LocalDate rez = toLocalDate().plusDays(1);
         return new Date(rez.getYear(), rez.getMonthValue(), rez.getDayOfMonth());
     }

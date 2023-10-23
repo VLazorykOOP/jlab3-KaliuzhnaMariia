@@ -1,17 +1,12 @@
 public class Person {
     private String name;
     private String surname;
-    private int ID;
-    public static int num;
+    private int id;
 
-    public Person(String name, String surname, int ID){
+    public Person(String name, String surname, int id){
         this.name = name;
         this.surname = surname;
-        this.ID = ID;
-    }
-
-    public Person(){
-        num++;
+        this.id = id;
     }
 
     public String getName() {
@@ -30,19 +25,19 @@ public class Person {
         this.surname = surname;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
     public String toString() {
         return "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", ID=" + ID + '\'' + ", ";
+                ", ID=" + id + '\'' + ", ";
     }
 }
 

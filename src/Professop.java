@@ -1,8 +1,8 @@
 public class Professop extends Person {
     int experience;
 
-    public Professop(String name, String surname, int ID, int experience) {
-        super(name, surname, ID);
+    public Professop(String name, String surname, int id, int experience) {
+        super(name, surname, id);
         this.experience = experience;
     }
 

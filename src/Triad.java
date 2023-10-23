@@ -9,10 +9,6 @@ public abstract class Triad {
         this.c = c;
     }
 
-    abstract Triad increment();
+    public abstract Triad increment();
 
-    public abstract boolean equals(Object obj);
-
-    @Override
-    public abstract String toString();
 }

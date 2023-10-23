@@ -1,25 +1,28 @@
 import java.time.LocalTime;
-public class Time extends Triad{
+
+public class Time extends Triad {
     public Time(int hour, int minute, int second) {
         super(hour, minute, second);
     }
 
-    private LocalTime toLocalTime(){
+    private LocalTime toLocalTime() {
         return LocalTime.of(a, b, c);
     }
 
     @Override
-    Time increment() {
+    public Time increment() {
         LocalTime rez = toLocalTime().plusMinutes(1);
-        return new Time (rez.getHour(), rez.getMinute(), rez.getSecond());
+        return new Time(rez.getHour(), rez.getMinute(), rez.getSecond());
     }
 
     @Override
     public boolean equals(Object obj) {
         Time time = (Time) obj;
-        if(toLocalTime().isAfter(time.toLocalTime())){return false;}
-        else if (toLocalTime().isBefore(time.toLocalTime())) {return false;}
-        else return true;
+        if (toLocalTime().isAfter(time.toLocalTime())) {
+            return false;
+        } else if (toLocalTime().isBefore(time.toLocalTime())) {
+            return false;
+        } else return true;
     }
 
     @Override
